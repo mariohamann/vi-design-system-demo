@@ -1,0 +1,26 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/blocks";
+import tokens from "../tokens.json";
+
+<Meta title='Colors' />
+
+{ tokens?.other?.description?.value || 'Test' }
+
+<ColorPalette>
+	<ColorItem
+		title='theme.color.primary'
+		subtitle='Primary color'
+		colors={{
+			"50": tokens["color/primitives"]["Blue"]["50"].value,
+			"100": tokens["color/primitives"]["Blue"]["100"].value,
+			"200": tokens["color/primitives"]["Blue"]["200"].value,
+			"300": tokens["color/primitives"]["Blue"]["300"].value,
+			"400": tokens["color/primitives"]["Blue"]["400"].value,
+			"500": tokens["color/primitives"]["Blue"]["500"].value,
+			"600": tokens["color/primitives"]["Blue"]["600"].value,
+			"700": tokens["color/primitives"]["Blue"]["700"].value,
+			"800": tokens["color/primitives"]["Blue"]["800"].value,
+			"900": tokens["color/primitives"]["Blue"]["900"].value,
+			"950": tokens["color/primitives"]["Blue"]["950"].value,
+		}}
+	/>
+</ColorPalette>
